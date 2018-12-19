@@ -1,0 +1,16 @@
+
+@import '~@angular/material/theming';
+
+
+$custom-typography: mat-typography-config($font-family: '"Lato", sans-serif;');
+@include mat-core($custom-typography);
+
+
+$gamsat-primary: mat-palette($mat-indigo);
+$gamsat-accent: mat-palette($mat-pink, A200, A100, A400);
+
+$gamsat-warn: mat-palette($mat-red);
+
+$gamsat-theme: mat-light-theme($gamsat-primary, $gamsat-accent, $gamsat-warn);
+
+@include angular-material-theme($gamsat-theme);
